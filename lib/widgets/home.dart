@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gdscapp/widgets/aboutus.dart';
 import 'package:gdscapp/widgets/greetings.dart';
-import 'package:gdscapp/workingcomps/themestore.dart';
-import 'package:lottie/lottie.dart';
-import 'package:pretty_animated_text/pretty_animated_text.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 
 class Home extends StatefulWidget {
@@ -23,14 +20,15 @@ class _HomeState extends State<Home> {
      bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
     Color backgroundColor = isDarkMode ? Colors.black38! : Colors.grey[300]!;
 
-    return Column(
-          children: 
-          [   
-           Greetings(),
-
-    
-          ],
-        );
+    return SingleChildScrollView(
+      child: Column(
+            children: 
+            [   
+             Greetings(),
+             Aboutus(),
+            ],
+          ),
+    );
   }
  
 }
