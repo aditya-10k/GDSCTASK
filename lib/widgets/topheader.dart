@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gdscapp/pages/newchat.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class Topheader extends StatefulWidget {
@@ -27,7 +28,7 @@ class _TopheaderState extends State<Topheader> {
                 width: 250,
                 ),
                 SizedBox(width: 10,),
-                IconButton(onPressed: (){}, 
+                IconButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder:(context) => NewChat()));}, 
                 icon: Icon( Bootstrap.robot)
                 )
               ],

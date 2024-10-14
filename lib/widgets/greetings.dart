@@ -56,14 +56,17 @@ class _GreetingsState extends State<Greetings> {
 
              SizedBox(height: 20,),
 
-            BlurText(
-      text: 'Meet and learn with other developers and build solutions for communities with Google technology.' ,
-      duration: const Duration(seconds: 4), 
-      type: AnimationType.word,
-      textAlignment: TextAlignment.center,
-      textStyle: TextStyle(
-        fontSize: 14),
-    ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: BlurText(
+                    text: 'Meet and learn with other developers and build solutions for communities with Google technology.' ,
+                    duration: const Duration(seconds: 4), 
+                    type: AnimationType.word,
+                    textAlignment: TextAlignment.center,
+                    textStyle: TextStyle(
+                      fontSize: 14),
+                  ),
+            ),
 
   SizedBox(height: 20,),
 
