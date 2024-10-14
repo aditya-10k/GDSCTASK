@@ -102,6 +102,6 @@ class _GreetingsState extends State<Greetings> {
       ],
     )
           ],
-        );;
+        );
   }
 }

@@ -40,6 +40,7 @@ dependencies:
   lottie: ^3.1.2
   pretty_animated_text: ^1.0.3
   floating_navigation_bar: ^0.0.5
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:

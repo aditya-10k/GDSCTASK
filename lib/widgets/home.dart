@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gdscapp/widgets/aboutus.dart';
+import 'package:gdscapp/widgets/endlinks.dart';
 import 'package:gdscapp/widgets/greetings.dart';
+import 'package:gdscapp/widgets/stackinfo.dart';
 
 
 class Home extends StatefulWidget {
@@ -16,9 +18,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-
-     bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    Color backgroundColor = isDarkMode ? Colors.black38! : Colors.grey[300]!;
+        bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    Color backgroundColor = isDarkMode ? Colors.black38 : Colors.grey[300]!;
 
     return SingleChildScrollView(
       child: Column(
@@ -26,6 +27,8 @@ class _HomeState extends State<Home> {
             [   
              Greetings(),
              Aboutus(),
+            Stackinfo(),
+            Endlinks(),
             ],
           ),
     );

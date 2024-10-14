@@ -38,7 +38,7 @@ class _HomescrenState extends State<Homescren> {
            
 
     bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    Color backgroundColor = isDarkMode ? Colors.black38! : Colors.grey[300]!;
+    Color backgroundColor = isDarkMode ? Colors.black38 : Colors.grey[300]!;
 
 
     return Scaffold(

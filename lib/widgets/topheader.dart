@@ -15,7 +15,6 @@ class _TopheaderState extends State<Topheader> {
   @override
   Widget build(BuildContext context) {
      bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    Color backgroundColor = isDarkMode ? Colors.black38! : Colors.grey[300]!;
     return Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
